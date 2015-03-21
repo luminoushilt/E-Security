@@ -322,7 +322,7 @@ body {
       .foot li a:hover {
         text-decoration: underline; }
 
-/* Main Styling */
+/* Home Page Styling */
 .home .choice-panel {
   margin-bottom: 0.5em;
   max-width: 68em;
@@ -403,3 +403,41 @@ body {
   .home .creds .logo {
     float: right;
     margin-top: -2em; }
+
+/* Product page styling */
+.product section {
+  border: 1px solid #000;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .product section::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .product section .item {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .product section .item:last-child {
+      margin-right: 0; }
+    .product section .item img {
+      height: 100%;
+      width: 100%; }
+  .product section .desc {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    .product section .desc:last-child {
+      margin-right: 0; }
+  .product section .brand {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .product section .brand:last-child {
+      margin-right: 0; }
+    .product section .brand img {
+      height: 100%;
+      width: 100%; }
