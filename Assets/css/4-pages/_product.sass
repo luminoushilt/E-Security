@@ -2,9 +2,16 @@
 
 .product
 
+    main
+        height: auto
+
+
+    .top
+        border: none
+
 
     section
-        border: 1px solid #000
+        border-top: 1px solid #eee
         +outer-container
 
         .item
@@ -15,10 +22,16 @@
 
         .desc
             +span-columns(7)
+            +transform(translateY(7%))
 
 
         .brand
+            padding-bottom: 5px
+            padding-top: 5px
             +span-columns(3)
 
             img
                 +size(100%)
+
+            p
+                +transform(translateY(20%))

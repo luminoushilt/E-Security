@@ -219,6 +219,39 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/Assets\/images\/ dmc1CDPACK.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/ dmc1CDPACK.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/ dmc1CDPACK.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/3PendantsLarge.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/3PendantsLarge.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/3PendantsLarge.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/3PendantsSmall.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/3PendantsSmall.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/3PendantsSmall.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/Assets\/images\/6271C-tc.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -274,6 +307,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/Assets\/images\/DVR-4TL-160_300.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/DVR-4TL-160_300.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/DVR-4TL-160_300.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/dvr-8tl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/dvr-8tl.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/dvr-8tl.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/Assets\/images\/gray.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -296,6 +351,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/Assets\/images\/Ldmc1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/Ldmc1.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/Ldmc1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/Ldmc1CDPACK.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/Ldmc1CDPACK.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/Ldmc1CDPACK.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/Ldmc3-4B.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/Ldmc3-4B.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/Ldmc3-4B.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/Ldmc4RW.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/Ldmc4RW.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/Ldmc4RW.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/Assets\/images\/left-image-3.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -303,6 +402,83 @@
 		"initialSize": 7957,
 		"inputAbbreviatedPath": "\/Assets\/images\/left-image-3.png",
 		"outputAbbreviatedPath": "\/Assets\/images\/left-image-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/LNW35.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/LNW35.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/LNW35.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/LVL-650IRVF-S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/LVL-650IRVF-S.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/LVL-650IRVF-S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/MC602.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/MC602.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/MC602.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/newlogo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/newlogo.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/newlogo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/old.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/old.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/old.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/oldlogo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/oldlogo.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/oldlogo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Assets\/images\/PERS-2400A.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/Assets\/images\/PERS-2400A.jpg",
+		"outputAbbreviatedPath": "\/Assets\/images\/PERS-2400A.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -371,11 +547,11 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/Contactus.html": {
+	"\/ContactUs\/Contactus.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Contactus.html",
+		"inputAbbreviatedPath": "\/ContactUs\/Contactus.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -409,138 +585,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/Products\/Assets\/images\/ dmc1CDPACK.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3813,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/ dmc1CDPACK.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/ dmc1CDPACK.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/3PendantsLarge.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 17666,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/3PendantsLarge.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/3PendantsLarge.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/DVR-4TL-160_300.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 29145,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/DVR-4TL-160_300.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/DVR-4TL-160_300.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/dvr-8tl.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9244,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/dvr-8tl.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/dvr-8tl.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/Ldmc1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 31924,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/Ldmc1.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/Ldmc1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/Ldmc1CDPACK.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 27238,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/Ldmc1CDPACK.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/Ldmc1CDPACK.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/Ldmc3-4B.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20134,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/Ldmc3-4B.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/Ldmc3-4B.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/Ldmc4RW.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 81255,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/Ldmc4RW.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/Ldmc4RW.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/LNW35.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 21346,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/LNW35.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/LNW35.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/LVL-650IRVF-S.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 59013,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/LVL-650IRVF-S.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/LVL-650IRVF-S.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/MC602.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4138,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/MC602.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/MC602.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Products\/Assets\/images\/PERS-2400A.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 68404,
-		"inputAbbreviatedPath": "\/Products\/Assets\/images\/PERS-2400A.jpg",
-		"outputAbbreviatedPath": "\/Products\/Assets\/images\/PERS-2400A.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/Products\/index.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -551,15 +595,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
-		},
-	"\/Products\/index2.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Products\/index2.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
@@ -573,60 +608,14 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Services\/Assets\/Images\/3PendantsLarge.jpg": {
-		"fileType": 16384,
+	"\/scratch.html": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 17666,
-		"inputAbbreviatedPath": "\/Services\/Assets\/Images\/3PendantsLarge.jpg",
-		"outputAbbreviatedPath": "\/Services\/Assets\/Images\/3PendantsLarge.jpg",
+		"inputAbbreviatedPath": "\/scratch.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Services\/Assets\/Images\/3PendantsSmall.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4256,
-		"inputAbbreviatedPath": "\/Services\/Assets\/Images\/3PendantsSmall.jpg",
-		"outputAbbreviatedPath": "\/Services\/Assets\/Images\/3PendantsSmall.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Services\/Assets\/Images\/newlogo.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18474,
-		"inputAbbreviatedPath": "\/Services\/Assets\/Images\/newlogo.jpg",
-		"outputAbbreviatedPath": "\/Services\/Assets\/Images\/newlogo.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Services\/Assets\/Images\/old.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9917,
-		"inputAbbreviatedPath": "\/Services\/Assets\/Images\/old.jpg",
-		"outputAbbreviatedPath": "\/Services\/Assets\/Images\/old.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Services\/Assets\/Images\/oldlogo.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18200,
-		"inputAbbreviatedPath": "\/Services\/Assets\/Images\/oldlogo.jpg",
-		"outputAbbreviatedPath": "\/Services\/Assets\/Images\/oldlogo.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"outputPathIsSetByUser": 0
 		},
 	"\/Services\/index.html": {
 		"fileType": 8192,
