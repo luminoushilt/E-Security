@@ -1,40 +1,51 @@
 /* Banner/heading styling */
 
-.banner
-    +clearfix
-    max-width: 980px
+.welcome
+	background-color: $banner
+	color: #fff
+	padding: 10px 0 2px
+	text-align: center
+	width: 100vw
 
-    .sticker
-        border: none
-        float: left
-        margin-top: 10px
+header
+	+outer-container
+	text-align: center
 
-    .logo
-        float: right
-        margin-bottom: 2em
-        margin-top: -0.25em
+	.sticker
+		margin-top: -5px
+		padding: 0
+		+span-columns(2)
 
-    a
-        color: $link-color
-        border: none
-        font-family: $verdana
-        font-size: 10px
-        font-weight: bold
-        padding-left: 0.33em
-        padding-right: 1em
-        text-decoration: none
+		img
+			margin: 0
+			+size(100%)
 
-        &:hover
-            text-decoration: underline
-    ul
-        float: right
-        margin: 20px 5px 10px
-        padding-right: 5px
+	.logo
+		margin-left: -25px
+		+span-columns(4)
+		
+		img
+			+size(100%)
 
-    li
-        border-right: 2px solid $link-color
-        display: inline
-        list-style: none
+	nav
+		margin-top: 20px
+		+span-columns(6)
 
-        &:nth-child(5)
-            border-right: none
+		.navi
+		
+			li
+				display: inline-block
+				list-style: none
+				
+				a
+					background-color: $nav-button
+					border: 1px solid #000066
+					border-radius: 5px
+					color: #fff
+					padding: 8px
+	
+					&:hover
+						background-color: #fff
+						color: $nav-button
+						text-decoration: none
+						+transition()
