@@ -49,3 +49,51 @@ header
 						color: $nav-button
 						text-decoration: none
 						+transition()
+	
+	.mobile-nav-toggle
+		cursor: pointer
+		+position(absolute, 15px 20px null null)
+		+size(50px)
+
+		span, span:before, span:after
+			background: #333
+			content: ""
+			display: block
+			height: 2px
+			top: 15px
+			position: relative
+			+transition()
+
+		span:before
+			top: 27x
+
+		span:after
+			top: -17px
+
+		&:hover span
+			background: transparent
+
+		&:hover span:before,
+		&:hover span:after
+			transform-origin: center
+			transform: rotate(45deg)
+			top: 0
+
+		&:hover span:before
+			transform: rotate(-45deg)
+
+@media(max-width: 1140px)
+	header
+	
+		nav
+			width: 300px
+	
+			.navi
+	
+				li
+					box-sizing: border-box
+					display: none
+					max-width: $full-width
+	
+					a
+						background-color: #FFF
