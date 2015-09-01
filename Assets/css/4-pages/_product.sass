@@ -1,1 +1,44 @@
 /* Product page styling */
+
+.products
+	padding: 2em 0
+	
+	h2
+		text-align: center
+
+	.section
+		border-bottom: 1px solid $border-color
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-around
+		margin: 0
+		padding: 0	
+		
+		&:last-child
+			border-bottom: none
+
+		.item
+			border-right: 1px solid $border-color
+			padding-right: 5px
+			
+			img
+				background: #fff
+				border: none
+				border-radius: 0
+				margin: 10px 0
+				
+		.desc
+			flex: 1 10 440px
+			padding: 1em
+			
+			h6
+				margin-bottom: 5px
+				text-transform: uppercase
+	
+@media(max-width: 631px)
+	.products
+	
+		.section
+	
+			.item
+				border: none
