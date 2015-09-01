@@ -1,28 +1,152 @@
 /* Services Section Styles */
 
-//section
+.services
+	margin: 0
+	min-height: 100vh
 	padding: 1em
-	+size($full-width 100vh)
+	position: relative
+	text-align: center
+	width: $full-width
 	
-	.commercial
-		text-align: justify
+	.service
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		margin: 1em 0
+		padding: 1em 0
 
-		h2
-			text-align: center
+		.location
+			display: flex
+			flex: 2 1 320px
+			flex-wrap: wrap
+			height: 500px
+			justify-content: center
+			position: relative
 
-		img
-			border: 1px solid $border-color
-			border-radius: 10px
-			+size(387px 200px)
+		.home
+			padding: 25px 0
 
-.residential
-	text-align: justify
+			.btn
+				border-radius: 0
+				flex-basis: $fill
+				height: 39px
+				max-width: 320px
+				
+			img
+				border-radius: 0
+				height: 250px
+				max-width: 320px
+				width: $fill
+				
+			h6
+				line-height: 1.2
+				padding: 0 1em
+	
+			p
+				margin-top: -30px
+				padding: 0 1em
 
-	h2
-		padding-bottom: 10px
-		text-align: center
+		.work
+			@extend .home
+	
+			.btn
+				margin-top: -25px
+	
+			img
+				margin-top: -30px
+			
+		.secure
+			flex: 1 1 $fill
+			max-width: 190px
+			padding: 25px 0
 
-	img
-		border: 1px solid $border-color
-		border-radius: 10px
-		+size(387px 200px)
+			img
+				border-radius: 0
+				max-width: 190px
+				width: $fill
+			p
+				margin-top: -25px
+				padding: 0 1em
+				text-align: center
+
+		.commercial
+			text-align: justify
+
+			h2
+				text-align: center
+
+			img
+				border: 1px solid $border-color
+				border-radius: 10px
+				+size(387px 200px)
+
+		.residential
+			text-align: justify
+
+			h2
+				padding-bottom: 10px
+				text-align: center
+
+			img
+				border: 1px solid $border-color
+				border-radius: 10px
+				+size(387px 200px)
+	
+@media(max-width: 707px)
+
+	.services
+	
+		.service
+	
+			.home
+			
+				.btn
+					margin-bottom: -12px
+	
+			.work
+	
+				.btn
+					margin-bottom: 1px
+	
+@media(max-width: 466px)
+
+	.services
+	
+		.service
+	
+			.home
+			
+				.btn
+					margin-bottom: -5px
+	
+@media(max-width: 393px)
+
+	.services
+	
+		.service
+	
+			.home
+			
+				.btn
+					margin-bottom: -3px
+	
+			.work
+	
+				.btn
+					margin-bottom: 3px
+	
+@media(max-width: 359px)
+
+	.services
+	
+		.service
+	
+			.home
+			
+				.btn
+					margin-bottom: 10px
+	
+			.work
+	
+				.btn
+					margin-bottom: 18px
