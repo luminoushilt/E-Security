@@ -2,6 +2,7 @@
 
 .welcome
 	background-color: $banner
+	border-bottom: 1px solid $border-color
 	color: #fff
 	padding: 10px 0 2px
 	text-align: center
@@ -9,38 +10,42 @@
 
 header
 	display: flex
+	flex-wrap: wrap
 	justify-content: space-between
 	text-align: center
 
 	.sticker
-		margin-left: -27px
+		//border: 1px dashed $red
+		flex: 1 1 5px
 		margin-top: 5px
+		max-width: 90px
 		padding: 0
-		+size(140px 90px)
 
 		img
 			margin: 0
 			+size($fill)
 
 	.logo
-		margin-left: -20px
-		margin-right: 60px
-		+size(350px 95px)
-		
+		//border: 1px dashed #00ff00
+		flex: 1 1 280px
+		max-width: 370px
+
 		img
 			+size($fill)
 
 	nav
-		flex-grow: 1
+		//border: 1px dashed #0000ff
+		flex: 1 1 340px
 		margin-top: 20px
+		max-width: 460px
 
 		.navi
 			display: flex
 			justify-content: space-around
-		
+
 			li
 				list-style: none
-				
+
 				a
 					background-color: $nav-button
 					border: 1px solid #000066
@@ -48,13 +53,13 @@ header
 					color: #fff
 					display: block
 					padding: 8px
-	
+
 					&:hover
 						background-color: #fff
 						color: $nav-button
 						text-decoration: none
 						+transition()
-	
+
 	.mobile-nav-toggle
 		cursor: pointer
 		+position(absolute, 15px 20px null null)
@@ -90,46 +95,21 @@ header
 		&.is-open span:before
 			background: $bg-color
 			transform: rotate(-45deg)
+@media(max-width: 965px)
 
-	.mobile-navi
-		background: $nav-button
-		border-radius: 5px
-		box-shadow: 0 5px 15px #333
-		display: none
-		opacity: 0.85
-		+position(absolute, -5px 20px null null)
-		+size(300px 240px)
-	
-		ul
-	
-			li
-				display: block
-				list-style: none
-	
-				a
-					//background: $nav-button
-					color: #fff
-					display: block
-					margin: 0
-					padding: 8px 16px
-	
-					&:hover
-						background: $bg-color
-						color: $nav-button
-						text-decoration: none
-
-@media(max-width: 1140px)
 	header
-	
+
+		.logo
+			display: none
+
+@media(max-width: 640px)
+
+	header
+
 		nav
-			width: 300px
-	
+
 			.navi
-	
-				li
-					box-sizing: border-box
-					display: none
-					max-width: $full-width
-	
-					a
-						background-color: #FFF
+				display: flex
+				flex-direction: column
+				justify-content: center
+				margin: 0

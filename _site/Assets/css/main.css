@@ -352,16 +352,21 @@ th:last-child, td:last-child {
 
 .container {
   box-sizing: border-box;
-  margin: 1em auto;
+  margin: 0 auto;
   max-width: 980px;
   padding: 0 20px;
   position: relative;
   width: 100%;
 }
 
+#wrapper {
+  margin: 1em auto;
+}
+
 /* Banner/heading styling */
 .welcome {
   background-color: #213178;
+  border-bottom: 1px solid #ddd;
   color: #fff;
   padding: 10px 0 2px;
   text-align: center;
@@ -373,6 +378,9 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -381,11 +389,13 @@ header {
 }
 
 header .sticker {
-  margin-left: -27px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 5px;
+      -ms-flex: 1 1 5px;
+          flex: 1 1 5px;
   margin-top: 5px;
+  max-width: 90px;
   padding: 0;
-  height: 90px;
-  width: 140px;
 }
 
 header .sticker img {
@@ -395,10 +405,11 @@ header .sticker img {
 }
 
 header .logo {
-  margin-left: -20px;
-  margin-right: 60px;
-  height: 95px;
-  width: 350px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 280px;
+      -ms-flex: 1 1 280px;
+          flex: 1 1 280px;
+  max-width: 370px;
 }
 
 header .logo img {
@@ -408,10 +419,11 @@ header .logo img {
 
 header nav {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-flex: 1 1 340px;
+      -ms-flex: 1 1 340px;
+          flex: 1 1 340px;
   margin-top: 20px;
+  max-width: 460px;
 }
 
 header nav .navi {
@@ -499,48 +511,28 @@ header .mobile-nav-toggle.is-open span:before {
           transform: rotate(-45deg);
 }
 
-header .mobile-navi {
-  background: #213178;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px #333;
-  display: none;
-  opacity: 0.85;
-  position: absolute;
-  top: -5px;
-  right: 20px;
-  height: 240px;
-  width: 300px;
-}
-
-header .mobile-navi ul li {
-  display: block;
-  list-style: none;
-}
-
-header .mobile-navi ul li a {
-  color: #fff;
-  display: block;
-  margin: 0;
-  padding: 8px 16px;
-}
-
-header .mobile-navi ul li a:hover {
-  background: #F6F6F8;
-  color: #213178;
-  text-decoration: none;
-}
-
-@media (max-width: 1140px) {
-  header nav {
-    width: 300px;
-  }
-  header nav .navi li {
-    box-sizing: border-box;
+@media (max-width: 965px) {
+  header .logo {
     display: none;
-    max-width: 100%;
   }
-  header nav .navi li a {
-    background-color: #FFF;
+}
+
+@media (max-width: 640px) {
+  header nav .navi {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
   }
 }
 
@@ -801,6 +793,16 @@ section p {
   .products .section .item {
     border: none;
   }
+}
+
+/* Footer Sytling */
+footer {
+  background-color: #213178;
+  border-top: 1px solid #ddd;
+  color: #fff;
+  padding: 10px 0 2px;
+  text-align: center;
+  width: 100vw;
 }
 
 /* End: E-Security StyleSheet */
