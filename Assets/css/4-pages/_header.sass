@@ -15,8 +15,7 @@ header
 	text-align: center
 
 	.sticker
-		//border: 1px dashed $red
-		flex: 1 1 5px
+		flex: 1 1 90px
 		margin-top: 5px
 		max-width: 90px
 		padding: 0
@@ -26,7 +25,6 @@ header
 			+size($fill)
 
 	.logo
-		//border: 1px dashed #00ff00
 		flex: 1 1 280px
 		max-width: 370px
 
@@ -34,14 +32,13 @@ header
 			+size($fill)
 
 	nav
-		//border: 1px dashed #0000ff
 		flex: 1 1 340px
-		margin-top: 20px
+		margin-top: 15px
 		max-width: 460px
 
 		.navi
 			display: flex
-			justify-content: space-around
+			justify-content: space-between
 
 			li
 				list-style: none
@@ -60,41 +57,44 @@ header
 						text-decoration: none
 						+transition()
 
-	.mobile-nav-toggle
-		cursor: pointer
-		+position(absolute, 15px 20px null null)
-		+size(45px)
+		.mobile-nav-toggle
+			cursor: pointer
+			+position(absolute, 15px 20px null null)
+			+size(39px)
 
-		span, span:before, span:after
-			background: #333
-			content: ""
-			//display: block
-			height: 2px
-			opacity: 1
-			position: relative
-			top: 15px
-			+transition()
+			span, span:before, span:after
+				background: #333
+				content: ""
+				display: none
+				height: 2px
+				//opacity: 1
+				position: relative
+				top: 15px
+				+transition()
 
-		span:before
-			top: 27x
+			span:before
+				top: 27x
 
-		span:after
-			top: -17px
+			span:after
+				top: -17px
 
-		&.is-open span
-			background: transparent
-			+position(absolute, 10px 10px null null)
+			&:hover span
+				background: transparent
+				+position(absolute, 10px 10px null null)
 
-		&.is-open span:before,
-		&.is-open span:after
-			background: $bg-color
-			transform-origin: center
-			transform: rotate(45deg)
-			top: 0
+			&:hover span:before,
+			&:hover span:after
+				background: #333
+				transform-origin: center
+				transform: rotate(45deg)
+				top: 0
+				//opacity: 1
 
-		&.is-open span:before
-			background: $bg-color
-			transform: rotate(-45deg)
+			&:hover span:before
+				background: #333
+				transform: rotate(-45deg)
+				//opacity: 1
+
 @media(max-width: 965px)
 
 	header
@@ -107,9 +107,37 @@ header
 	header
 
 		nav
+			display: flex
+			justify-content: flex-end
+			max-width: 200px
 
 			.navi
 				display: flex
+				flex-basis: 200px
 				flex-direction: column
-				justify-content: center
+				justify-content: flex-start
 				margin: 0
+				max-width: 200px
+				opacity: 0
+				+transition()
+
+				&.menu-open
+					opacity: 1
+
+				li
+					margin: 0
+
+					a
+						border-radius: 0
+
+			.mobile-nav-toggle
+
+				span, span:before, span:after
+					display: block
+
+@media(max-width: 350px)
+
+	header
+
+		.sticker
+			max-width: 70px
