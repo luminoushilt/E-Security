@@ -44,13 +44,23 @@ function serviceSwap() {
     var services = $('section.services');
 
     resBtn.click(function(jump) {
+        var menuToggle = $('.mobile-nav-toggle');
+        var menu = $('.navi');
+        
         services.load('residential.html');
         jump.preventDefault();
+        menuToggle.removeClass('is-open');
+        menu.removeClass('menu-open');
     });
 
     comBtn.click(function(jump) {
+        var menuToggle = $('.mobile-nav-toggle');
+        var menu = $('.navi');
+        
         services.load('commercial.html');
         jump.preventDefault();
+        menuToggle.removeClass('is-open');
+        menu.removeClass('menu-open');
     });
 }
 
