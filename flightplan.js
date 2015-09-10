@@ -19,5 +19,5 @@ plan.local(function(local) {
   local.log('Copy files to remote hosts');
   var filesToCopy = local.exec('_site/', {silent: true});
   // rsync files to all the destination's hosts
-  local.transfer(filesToCopy, '~/www/luminoushilt.com/Portfolio/Projects//E-Security_site/');
+  local.transfer(filesToCopy, '~/www/public_html/luminoushilt.com/Portfolio/Projects//E-Security_site/');
 });
