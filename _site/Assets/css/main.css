@@ -156,7 +156,7 @@ input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-se
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: .35em .625em .75em;
 }
 
 legend {
@@ -263,7 +263,7 @@ body {
 }
 
 body {
-  background: #F6F6F8;
+  background: #fff;
   font-size: 14px;
   line-height: 1.6;
   font-family: "Noto Sans", "Verdana", "Geneva", sans-serif;
@@ -346,6 +346,7 @@ th:last-child, td:last-child {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 980px;
+  min-width: 320px;
   padding: 0 20px;
   position: relative;
   width: 100%;
@@ -481,8 +482,8 @@ header nav .mobile-nav-toggle span, header nav .mobile-nav-toggle span:before, h
   height: 2px;
   position: relative;
   top: 15px;
-  -webkit-transition: all 0.15s ease-out 0s;
-  transition: all 0.15s ease-out 0s;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 header nav .mobile-nav-toggle span:before {
@@ -501,10 +502,8 @@ header nav .mobile-nav-toggle.is-open span:before,
 header nav .mobile-nav-toggle.is-open span:after {
   background-color: #fff;
   -webkit-transform-origin: center;
-      -ms-transform-origin: center;
           transform-origin: center;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 0;
 }
@@ -512,7 +511,6 @@ header nav .mobile-nav-toggle.is-open span:after {
 header nav .mobile-nav-toggle.is-open span:before {
   background-color: #fff;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
@@ -554,8 +552,8 @@ header nav .mobile-nav-toggle.is-open span:before {
     margin: 0;
     max-width: 200px;
     opacity: 0;
-    -webkit-transition: all 0.15s ease-out 0s;
-    transition: all 0.15s ease-out 0s;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   header nav .navi.menu-open {
     box-shadow: 0 5px 10px #333;
@@ -580,6 +578,11 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 /* Home Section Styling */
+.intro-img img {
+  height: 100%;
+  width: 100%;
+}
+
 .intro {
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
@@ -606,6 +609,17 @@ header nav .mobile-nav-toggle.is-open span:before {
   margin-bottom: 0;
   margin-top: 55px;
   text-align: justify;
+}
+
+@media (max-width: 640px) {
+  .intro-img {
+    margin-top: -115px;
+  }
+  .intro-img.menu-open {
+    margin-top: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
 }
 
 /* Services Section Styles */

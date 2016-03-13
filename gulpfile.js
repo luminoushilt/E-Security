@@ -7,26 +7,32 @@ var gulp        = require("gulp"),
 	sass        = require("gulp-sass"),
 	plumber     = require("gulp-plumber"),
 	prefix      = require("gulp-autoprefixer"),
-	browserSync = require("browser-sync").create(),
-	cp 			= require('child_process');
+	image		= require("gulp-image"),
+	uglify 		= require('gulp-uglify'),
+	browserSync = require("browser-sync").create();
+
 
 // --------------------------------------------------------------------
 // Settings
 // --------------------------------------------------------------------
 
-var src = {
-	sass: ['Assets/css/1-tools/*.sass', 'Assets/css/2-base/*.sass', 'Assets/css/3-modules/*.sass', 'Assets/css/4-pages/*.sass','Assets/css/*.sass' , 'Assets/css/1-tools/*.scss', 'Assets/css/2-base/*.scss', 'Assets/css/3-modules/*.scss', 'Assets/css/4-pages/*.scss'],
-	jade: "_jadefiles/*.jade",
-	css: "Assets/css"
+var code = {
+	sass: ['./Assets/css/1-tools/*.sass', './Assets/css/2-base/*.sass', './Assets/css/3-modules/*.sass', './Assets/css/4-pages/*.sass','./Assets/css/*.sass' , './Assets/css/1-tools/*.scss', './Assets/css/2-base/*.scss', './Assets/css/3-modules/*.scss', './Assets/css/4-pages/*.scss'],
+	jade: "./*.jade",
+	js: "./Assets/js/*.js",
+	img: "./Assets/img/*",
+	css: "./Assets/css",
+	root: "./"
 };
 
- var output = {
+var output = {
+	js: "_site/Assets/js",
 	css: "_site/Assets/css",
-	html: "_includes",
-	root: '_site'
+	img: "_site/Assets/img",
+	root: "_site/",
+	//min_css: 'app.min.css',
+	//min_js: 'app.min.js'
 };
-
-var messages 	= {jekyllBuild: '<span style="color: grey">Compiling:</span> $ jekyll build'};
 
 
 // --------------------------------------------------------------------
@@ -40,26 +46,34 @@ var onError = function(err) {
 
 
 // --------------------------------------------------------------------
-// Build the Jekyll Site
+// Task: Image
 // --------------------------------------------------------------------
 
-gulp.task('jekyll-build', function (done) {
-    
-	browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
-        .on('close', done);
+gulp.task('image', function () {
+
+  return gulp.src(code.img)
+	.pipe(plumber({
+	  errorHandler: onError
+	}))
+	.pipe(image())
+    .pipe(gulp.dest(output.img));
 });
 
 
 // --------------------------------------------------------------------
-// Rebuild Jekyll & do page reload
+// Task: Compress / Ugligy
 // --------------------------------------------------------------------
 
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    
-	browserSync.reload();
-});
+gulp.task('compress', function() {
 
+  return gulp.src(code.js)
+	.pipe(plumber({
+		errorHandler: onError
+	}))
+	.pipe(uglify())
+    .pipe(gulp.dest(output.js))
+	.pipe(browserSync.stream());
+});
 
 // --------------------------------------------------------------------
 // Task: Sass
@@ -67,7 +81,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 
 gulp.task('sass', function() {
 
-	return gulp.src(src.sass)
+	return gulp.src(code.sass)
 		.pipe(plumber({
 			errorHandler: onError
 		}))
@@ -79,7 +93,7 @@ gulp.task('sass', function() {
 		.pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
 		.pipe(gulp.dest(output.css))
 		.pipe(browserSync.stream())
-		.pipe(gulp.dest(src.css));
+		.pipe(gulp.dest(code.css));
 });
 
 
@@ -89,12 +103,13 @@ gulp.task('sass', function() {
 
 gulp.task('jade', function() {
 
-	return gulp.src(src.jade)
+	return gulp.src(code.jade)
 		.pipe(plumber({
 			errorHandler: onError
 		}))
 		.pipe(jade({pretty: true}))
-		.pipe(gulp.dest(output.html));
+		.pipe(gulp.dest(output.root))
+		.pipe(browserSync.stream());
 });
 
 
@@ -102,8 +117,7 @@ gulp.task('jade', function() {
 // Task: Browser Sync Server
 // --------------------------------------------------------------------
 
-gulp.task('serve', ['sass', 'jade', 'jekyll-build'], function() {
-	
+gulp.task('serve', ['sass', 'jade', 'image', 'compress'], function() {
 	browserSync.init({
 		server: {
 			baseDir: output.root
@@ -117,9 +131,10 @@ gulp.task('serve', ['sass', 'jade', 'jekyll-build'], function() {
 // --------------------------------------------------------------------
 
 gulp.task('watch', function() {
-	gulp.watch(src.jade, ['jade']);
-	gulp.watch(src.sass, ['sass']);
-	gulp.watch([output.html, output.root, '_layouts/*.html', 'index.html'], ['jekyll-rebuild']);
+	gulp.watch(code.jade, ['jade']);
+	gulp.watch(code.sass, ['sass']);
+	gulp.watch(code.img, ['image']);
+	gulp.watch(code.js, ['compress']);
 	gulp.watch(output.root).on('change', browserSync.reload);
 });
 
