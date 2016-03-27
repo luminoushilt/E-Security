@@ -6,10 +6,17 @@ var esecurity = (function($) {
         var $menuToggle = $('.mobile-nav-toggle');
         var $menu = $('.navi');
         var $intro = $('.intro-img, .intro');
+        var $target = $('a');
 
         $menuToggle.on('click', function() {
             $(this).toggleClass('is-open');
             $menu.toggleClass('menu-open');
+            $intro.toggleClass('menu-open');
+        });
+
+        $target.on('click', function() {
+            $menu.toggleClass('menu-open');
+            $menuToggle.toggleClass('is-open');
             $intro.toggleClass('menu-open');
         });
     }
@@ -48,7 +55,7 @@ var esecurity = (function($) {
     function serviceSwap() {
         var $resBtn = $(".res-btn, [href='#Residential']");
         var $comBtn = $(".com-btn, [href='#Commercial']");
-        var $services = $('section.services');
+        var $services = $('#Commercial');
 
         $resBtn.click(function(jump) {
             var $menuToggle = $('.mobile-nav-toggle');
@@ -56,10 +63,8 @@ var esecurity = (function($) {
             var $intro = $('.intro-img, .intro');
 
             $services.load('residential.html');
+            smoothScroll();
             jump.preventDefault();
-            $menuToggle.removeClass('is-open');
-            $menu.removeClass('menu-open');
-            $intro.toggleClass('menu-open');
         });
 
         $comBtn.click(function(jump) {
@@ -68,10 +73,33 @@ var esecurity = (function($) {
             var $intro = $('.intro-img, .intro');
 
             $services.load('commercial.html');
+            smoothScroll();
             jump.preventDefault();
-            $menuToggle.removeClass('is-open');
-            $menu.removeClass('menu-open');
-            $intro.toggleClass('menu-open');
+        });
+    }
+
+    // Auto scrolling
+    function smoothScroll() {
+        var anchorTags = $('a[href*=#]:not([href=#])');
+        var duration = 300;
+        var menu = $('.navi');
+        var hero = $('.hero-unit');
+
+        anchorTags.on('click', function() {
+            if(location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                var page = $('html, body');
+
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                hero.removeClass('is-open');
+                menu.removeClass('is-open');
+                if(target.length) {
+                    page.animate({
+                        scrollTop: target.offset().top
+                    }, duration);
+                    return false;
+                }
+            }
         });
     }
 
@@ -79,6 +107,7 @@ var esecurity = (function($) {
         mobileMenu();
         backToTop();
         serviceSwap();
+        smoothScroll();
     });
 
 })(jQuery);
