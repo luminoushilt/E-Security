@@ -357,6 +357,10 @@ th:last-child, td:last-child {
 }
 
 /* Banner/heading styling */
+body, html {
+  overflow-x: hidden;
+}
+
 .welcome {
   background-color: #213178;
   border-bottom: 1px solid #ddd;
@@ -468,6 +472,7 @@ header nav .navi li a:hover {
 
 header nav .mobile-nav-toggle {
   cursor: pointer;
+  display: none;
   position: absolute;
   top: 15px;
   right: 20px;
@@ -564,6 +569,9 @@ header nav .mobile-nav-toggle.is-open span:before {
   }
   header nav .navi li a {
     border-radius: 0;
+  }
+  header nav .mobile-nav-toggle {
+    display: block;
   }
   header nav .mobile-nav-toggle span, header nav .mobile-nav-toggle span:before, header nav .mobile-nav-toggle span:after {
     display: block;
