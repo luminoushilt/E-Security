@@ -1,5 +1,10 @@
 /* Home Section Styling */
 
+.intro-img
+
+	img
+		+size($fill)
+
 .intro
 	border-bottom: 1px solid $border-color
 	+clearfix()
@@ -18,3 +23,11 @@
 		margin-bottom: 0
 		margin-top: 55px
 		text-align: justify
+
+@media(max-width: 640px)
+	.intro-img
+		margin-top: -115px
+
+		&.menu-open
+			margin-top: 0
+			+transition(all 0.2s ease-in-out)

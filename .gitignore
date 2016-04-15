@@ -1,8 +1,5 @@
 # Created by https://www.gitignore.io
 
-### Project ###
-/Assets/include
-
 ### Linux ###
 *~
 
@@ -17,9 +14,6 @@
 .sass-cache
 *.css.map
 
-
-### Jade ###
-*.jade
 
 # https://git-scm.com/docs/gitignore
 # https://help.github.com/articles/ignoring-files
@@ -54,3 +48,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+### Production site ###
+_site/

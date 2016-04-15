@@ -1,0 +1,6 @@
+mixin navlinks
+
+    ul.navi
+        each val, link in {'./' : 'Home' , '#Residential' : 'Residential' , '#Commercial' : 'Commercial', '#Products':'Products', '#ContactUs' : 'Contact Us'}
+
+            li: a(href=link)= val
