@@ -156,7 +156,7 @@ input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-se
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: .35em .625em .75em;
 }
 
 legend {
@@ -501,10 +501,8 @@ header nav .mobile-nav-toggle.is-open span:before,
 header nav .mobile-nav-toggle.is-open span:after {
   background-color: #fff;
   -webkit-transform-origin: center;
-      -ms-transform-origin: center;
           transform-origin: center;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 0;
 }
@@ -512,7 +510,6 @@ header nav .mobile-nav-toggle.is-open span:after {
 header nav .mobile-nav-toggle.is-open span:before {
   background-color: #fff;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
