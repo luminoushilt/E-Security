@@ -1,7 +1,7 @@
 /* Contact us Styles */
 
 .contact
-    padding-bottom: 1em
+    padding: 1em
 
     h3
         text-align: center
@@ -9,23 +9,14 @@
 
     form
         display: flex
+        flex-direction: column
         flex-wrap: wrap
         justify-content: center
 
         input
             height: 24px
-            margin: 0 10px
-        
+            margin: 10px
+
             &[type="submit"]
                 +e-button($nav-button)
                 height: auto
-                
-            @media (max-width: 860px)
-        
-                &[type="submit"]
-                    margin-top: 5px
-
-    @media (max-width: 860px)
-        
-        form
-            flex-direction: column

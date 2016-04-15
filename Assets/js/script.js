@@ -55,7 +55,7 @@ var esecurity = (function($) {
     function serviceSwap() {
         var $resBtn = $(".res-btn, [href='#Residential']");
         var $comBtn = $(".com-btn, [href='#Commercial']");
-        var $services = $('#Commercial');
+        var $services = $('.services');
 
         $resBtn.click(function(jump) {
             var $menuToggle = $('.mobile-nav-toggle');

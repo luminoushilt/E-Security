@@ -631,10 +631,17 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 /* Services Section Styles */
+.gray-sec {
+  background-color: #ddd;
+  margin-top: -15px;
+  width: 100vw;
+  text-align: center;
+}
+
 .services {
   border-bottom: 1px solid #ddd;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
   padding: 1em;
   position: relative;
   text-align: center;
@@ -841,15 +848,63 @@ header nav .mobile-nav-toggle.is-open span:before {
   text-transform: uppercase;
 }
 
+.products .section-rev {
+  border-bottom: 1px solid #ddd;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row-reverse wrap;
+      -ms-flex-flow: row-reverse wrap;
+          flex-flow: row-reverse wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.products .section-rev:last-child {
+  border-bottom: none;
+}
+
+.products .section-rev .item-rev {
+  border-left: 1px solid #ddd;
+  padding-left: 5px;
+}
+
+.products .section-rev .item-rev img {
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin: 10px 0;
+}
+
+.products .section-rev .desc-rev {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 10 440px;
+      -ms-flex: 1 10 440px;
+          flex: 1 10 440px;
+  padding: 1em;
+}
+
+.products .section-rev .desc-rev h6 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
 @media (max-width: 631px) {
   .products .section .item {
+    border: none;
+  }
+  .products .section-rev .item-rev {
     border: none;
   }
 }
 
 /* Contact us Styles */
 .contact {
-  padding-bottom: 1em;
+  padding: 1em;
 }
 
 .contact h3 {
@@ -861,6 +916,11 @@ header nav .mobile-nav-toggle.is-open span:before {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -872,7 +932,7 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .contact form input {
   height: 24px;
-  margin: 0 10px;
+  margin: 10px;
 }
 
 .contact form input[type="submit"] {
@@ -893,22 +953,6 @@ header nav .mobile-nav-toggle.is-open span:before {
           transition: all 0.2s ease-in-out;
 }
 
-@media (max-width: 860px) {
-  .contact form input[type="submit"] {
-    margin-top: 5px;
-  }
-}
-
-@media (max-width: 860px) {
-  .contact form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 /* Footer Sytling */
 footer {
   background-color: #213178;
@@ -920,28 +964,22 @@ footer {
 }
 
 .back-to-top {
-  background: #213178;
+  background: #213178 url("../img/up-arrow.png") no-repeat center 43%;
   border-radius: 50%;
   cursor: pointer;
   display: none;
-  font-size: 32px;
   opacity: 0.25;
   position: fixed;
   right: 20px;
   bottom: 5px;
-  height: 55px;
-  width: 55px;
-  text-align: center;
+  height: 60px;
+  width: 60px;
+  text-indent: -9999px;
+  z-index: 999;
 }
 
 .back-to-top:hover {
   opacity: 1;
-}
-
-.back-to-top p {
-  color: #fff;
-  opacity: 1;
-  margin: auto;
 }
 
 /* End: E-Security StyleSheet */
