@@ -264,7 +264,7 @@ body {
 
 body {
   background: #fff;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   font-family: "Noto Sans", "Verdana", "Geneva", sans-serif;
   color: #2E2D33;
@@ -459,6 +459,7 @@ header nav .navi li a {
   border-radius: 5px;
   color: #fff;
   display: block;
+  font-size: 14px;
   padding: 8px;
 }
 
@@ -592,7 +593,6 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 .intro {
-  border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
   position: relative;
 }
@@ -633,13 +633,13 @@ header nav .mobile-nav-toggle.is-open span:before {
 /* Services Section Styles */
 .gray-sec {
   background-color: #ddd;
-  margin-top: -15px;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
   width: 100vw;
   text-align: center;
 }
 
 .services {
-  border-bottom: 1px solid #ddd;
   height: auto;
   margin: 0 auto;
   padding: 1em;
@@ -793,7 +793,6 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 /* Product page styling */
 .products {
-  border-bottom: 1px solid #ddd;
   margin: 1em 0;
   padding: 1em 0;
   position: relative;
@@ -825,7 +824,7 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .products .section .item {
   border-right: 1px solid #ddd;
-  padding-right: 5px;
+  padding-right: 30px;
 }
 
 .products .section .item img {
@@ -833,6 +832,8 @@ header nav .mobile-nav-toggle.is-open span:before {
   border: none;
   border-radius: 0;
   margin: 10px 0;
+  height: 100px;
+  width: 100px;
 }
 
 .products .section .desc {
@@ -870,7 +871,7 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .products .section-rev .item-rev {
   border-left: 1px solid #ddd;
-  padding-left: 5px;
+  padding-left: 30px;
 }
 
 .products .section-rev .item-rev img {
@@ -878,6 +879,8 @@ header nav .mobile-nav-toggle.is-open span:before {
   border: none;
   border-radius: 0;
   margin: 10px 0;
+  height: 100px;
+  width: 100px;
 }
 
 .products .section-rev .desc-rev {
@@ -941,6 +944,7 @@ header nav .mobile-nav-toggle.is-open span:before {
   border-radius: 5px;
   color: #fff;
   display: block;
+  font-size: 14px;
   padding: 8px;
   height: auto;
 }
@@ -958,6 +962,7 @@ footer {
   background-color: #213178;
   border-top: 1px solid #ddd;
   color: #fff;
+  font-size: 12px;
   padding: 10px 0 2px;
   text-align: center;
   width: 100vw;

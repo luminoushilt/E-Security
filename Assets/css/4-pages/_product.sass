@@ -1,7 +1,6 @@
 /* Product page styling */
 
 .products
-	border-bottom: 1px solid $border-color
 	margin: 1em 0
 	padding: 1em 0
 	position: relative
@@ -22,13 +21,14 @@
 
 		.item
 			border-right: 1px solid $border-color
-			padding-right: 5px
+			padding-right: 30px
 
 			img
 				background: #fff
 				border: none
 				border-radius: 0
 				margin: 10px 0
+				+size(100px)
 
 		.desc
 			flex: 1 10 440px
@@ -51,13 +51,14 @@
 
 		.item-rev
 			border-left: 1px solid $border-color
-			padding-left: 5px
+			padding-left: 30px
 
 			img
 				background: #fff
 				border: none
 				border-radius: 0
 				margin: 10px 0
+				+size(100px)
 
 		.desc-rev
 			flex: 1 10 440px
