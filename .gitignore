@@ -1,0 +1,9 @@
+### Jade ###
+*.jade
+
+/.git/
+
+flightplan.js
+
+### unecessary files ###
+/Assets/include/
