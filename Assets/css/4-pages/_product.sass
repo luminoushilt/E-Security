@@ -9,29 +9,29 @@
 		text-align: center
 
 	.section
-		border-bottom: 1px solid $border-color
 		display: flex
 		flex-flow: row wrap
 		justify-content: space-around
-		margin: 0
+		margin: 100px 0
 		padding: 0
 
 		&:last-child
 			border-bottom: none
 
 		.item
-			border-right: 1px solid $border-color
-			padding-right: 30px
+			margin-right: 40px
+			+size(200px 170px)
 
 			img
 				background: #fff
 				border: none
 				border-radius: 0
 				margin: 10px 0
-				+size(100px)
+				+size($fill)
 
 		.desc
 			flex: 1 10 440px
+			font-size: 1rem
 			padding: 1em
 
 			h6
@@ -39,30 +39,31 @@
 				text-transform: uppercase
 
 	.section-rev
-		border-bottom: 1px solid $border-color
 		display: flex
 		flex-flow: row-reverse wrap
 		justify-content: space-around
-		margin: 0
+		margin: 100px 0
 		padding: 0
 
 		&:last-child
 			border-bottom: none
 
 		.item-rev
-			border-left: 1px solid $border-color
-			padding-left: 30px
+			margin-left: 40px
+			+size(200px 170px)
 
 			img
 				background: #fff
 				border: none
 				border-radius: 0
 				margin: 10px 0
-				+size(100px)
+				+size($fill)
 
 		.desc-rev
 			flex: 1 10 440px
+			font-size: 1rem
 			padding: 1em
+			text-align: right
 
 			h6
 				margin-bottom: 5px
