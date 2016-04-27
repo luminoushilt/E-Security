@@ -103,11 +103,29 @@ var esecurity = (function($) {
         });
     }
 
+    //image slider
+    function securitySlider(event) {
+        $('#slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            prevArrow: $('#prev-0'),
+            nextArrow: $('#next-0')
+        });
+
+        event.preventDefault();
+    }
+
     $(document).ready(function() {
         mobileMenu();
         backToTop();
         serviceSwap();
         smoothScroll();
+        securitySlider();
     });
 
 })(jQuery);
