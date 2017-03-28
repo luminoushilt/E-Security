@@ -264,7 +264,7 @@ body {
 
 body {
   background: #fff;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.6;
   font-family: "Noto Sans", "Verdana", "Geneva", sans-serif;
   color: #2E2D33;
@@ -353,7 +353,7 @@ th:last-child, td:last-child {
 }
 
 #wrapper {
-  margin: 1em auto;
+  margin-top: 1em;
 }
 
 /* Banner/heading styling */
@@ -366,14 +366,11 @@ body, html {
   border-bottom: 1px solid #ddd;
   color: #fff;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 0;
@@ -386,14 +383,11 @@ body, html {
 
 header {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
@@ -401,7 +395,6 @@ header {
 
 header .sticker {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 90px;
       -ms-flex: 1 1 90px;
           flex: 1 1 90px;
   height: 91px;
@@ -418,7 +411,6 @@ header .sticker img {
 
 header .logo {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 280px;
       -ms-flex: 1 1 280px;
           flex: 1 1 280px;
   max-width: 370px;
@@ -431,7 +423,6 @@ header .logo img {
 
 header nav {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 340px;
       -ms-flex: 1 1 340px;
           flex: 1 1 340px;
   margin-top: 15px;
@@ -440,11 +431,9 @@ header nav {
 
 header nav .navi {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -460,6 +449,7 @@ header nav .navi li a {
   color: #fff;
   display: block;
   font-size: 14px;
+  line-height: 1.3;
   padding: 8px;
 }
 
@@ -529,30 +519,24 @@ header nav .mobile-nav-toggle.is-open span:before {
 @media (max-width: 640px) {
   header nav {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     max-width: 200px;
   }
   header nav .navi {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-basis: 200px;
-        -ms-flex-preferred-size: 200px;
-            flex-basis: 200px;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 0;
@@ -586,14 +570,74 @@ header nav .mobile-nav-toggle.is-open span:before {
   }
 }
 
+.slick-slider {
+  margin: 0 auto;
+  max-width: 840px !important;
+  width: 100% !important;
+}
+
+.slick-slide {
+  height: 545px !important;
+}
+
+.prev {
+  margin-right: 10px;
+  opacity: .1;
+  position: absolute;
+  top: 45%;
+  left: 0px;
+}
+
+.prev img {
+  height: 55px !important;
+  width: 50px !important;
+}
+
+.prev:hover {
+  opacity: 1;
+}
+
+.next {
+  margin-left: 10px;
+  opacity: .1;
+  position: absolute;
+  top: 45%;
+  right: 0px;
+}
+
+.next img {
+  height: 55px !important;
+  width: 50px !important;
+}
+
+.next:hover {
+  opacity: 1;
+}
+
+@media (max-width: 940px) {
+  .slick-slide {
+    height: auto !important;
+  }
+}
+
 /* Home Section Styling */
+.intro-img {
+  max-width: 940px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
 .intro-img img {
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
 }
 
 .intro {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -614,6 +658,7 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 .intro p {
+  font-size: 1.5rem;
   margin-bottom: 0;
   margin-top: 55px;
   text-align: justify;
@@ -621,12 +666,15 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 @media (max-width: 640px) {
   .intro-img {
-    margin-top: -115px;
+    margin-top: -95px;
   }
   .intro-img.menu-open {
     margin-top: 0;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+  }
+  .intro p {
+    text-align: center;
   }
 }
 
@@ -654,34 +702,27 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .services .service {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 1em 0;
   padding: 1em 0;
 }
 
 .services .service .location {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 2;
-  -webkit-flex: 2 1 320px;
       -ms-flex: 2 1 320px;
           flex: 2 1 320px;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 500px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
@@ -700,9 +741,8 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .services .service .home .location-wrap .btn, .services .service .work .location-wrap .btn {
   border-radius: 0;
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   height: 39px;
   max-width: 320px;
 }
@@ -710,7 +750,7 @@ header nav .mobile-nav-toggle.is-open span:before {
 .services .service .home .location-wrap img, .services .service .work .location-wrap img {
   border-radius: 0;
   height: 250px;
-  margin-top: -4px;
+  margin: -4px -5px 0px;
   max-width: 320px;
   width: 100%;
 }
@@ -721,13 +761,13 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 .services .service .home p, .services .service .work p {
+  font-size: 1.1rem;
   margin-top: -30px;
   padding: 0 1em;
 }
 
 .services .service .secure {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   max-width: 190px;
@@ -747,6 +787,7 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 .services .commercial {
+  font-size: 1.2rem;
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -769,6 +810,7 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 .services .residential {
+  font-size: 1.2rem;
   padding-bottom: 10px;
   text-align: justify;
 }
@@ -803,18 +845,14 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 .products .section {
-  border-bottom: 1px solid #ddd;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  margin: 0;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 100px 0;
   padding: 0;
 }
 
@@ -823,8 +861,9 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 .products .section .item {
-  border-right: 1px solid #ddd;
-  padding-right: 30px;
+  margin-right: 40px;
+  height: 170px;
+  width: 200px;
 }
 
 .products .section .item img {
@@ -832,15 +871,15 @@ header nav .mobile-nav-toggle.is-open span:before {
   border: none;
   border-radius: 0;
   margin: 10px 0;
-  height: 100px;
-  width: 100px;
+  height: 100%;
+  width: 100%;
 }
 
 .products .section .desc {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 10 440px;
       -ms-flex: 1 10 440px;
           flex: 1 10 440px;
+  font-size: 1rem;
   padding: 1em;
 }
 
@@ -850,18 +889,14 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 .products .section-rev {
-  border-bottom: 1px solid #ddd;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row-reverse wrap;
-      -ms-flex-flow: row-reverse wrap;
-          flex-flow: row-reverse wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  margin: 0;
+  -ms-flex-flow: row-reverse wrap;
+      flex-flow: row-reverse wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 100px 0;
   padding: 0;
 }
 
@@ -870,8 +905,9 @@ header nav .mobile-nav-toggle.is-open span:before {
 }
 
 .products .section-rev .item-rev {
-  border-left: 1px solid #ddd;
-  padding-left: 30px;
+  margin-left: 40px;
+  height: 170px;
+  width: 200px;
 }
 
 .products .section-rev .item-rev img {
@@ -879,16 +915,17 @@ header nav .mobile-nav-toggle.is-open span:before {
   border: none;
   border-radius: 0;
   margin: 10px 0;
-  height: 100px;
-  width: 100px;
+  height: 100%;
+  width: 100%;
 }
 
 .products .section-rev .desc-rev {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 10 440px;
       -ms-flex: 1 10 440px;
           flex: 1 10 440px;
+  font-size: 1rem;
   padding: 1em;
+  text-align: right;
 }
 
 .products .section-rev .desc-rev h6 {
@@ -916,19 +953,15 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .contact form {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -945,6 +978,7 @@ header nav .mobile-nav-toggle.is-open span:before {
   color: #fff;
   display: block;
   font-size: 14px;
+  line-height: 1.3;
   padding: 8px;
   height: auto;
 }
