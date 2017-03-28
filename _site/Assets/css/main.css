@@ -366,14 +366,11 @@ body, html {
   border-bottom: 1px solid #ddd;
   color: #fff;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 0;
@@ -386,14 +383,11 @@ body, html {
 
 header {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
@@ -401,7 +395,6 @@ header {
 
 header .sticker {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 90px;
       -ms-flex: 1 1 90px;
           flex: 1 1 90px;
   height: 91px;
@@ -418,7 +411,6 @@ header .sticker img {
 
 header .logo {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 280px;
       -ms-flex: 1 1 280px;
           flex: 1 1 280px;
   max-width: 370px;
@@ -431,7 +423,6 @@ header .logo img {
 
 header nav {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 340px;
       -ms-flex: 1 1 340px;
           flex: 1 1 340px;
   margin-top: 15px;
@@ -440,11 +431,9 @@ header nav {
 
 header nav .navi {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -530,30 +519,24 @@ header nav .mobile-nav-toggle.is-open span:before {
 @media (max-width: 640px) {
   header nav {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     max-width: 200px;
   }
   header nav .navi {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-basis: 200px;
-        -ms-flex-preferred-size: 200px;
-            flex-basis: 200px;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 0;
@@ -719,34 +702,27 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .services .service {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 1em 0;
   padding: 1em 0;
 }
 
 .services .service .location {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 2;
-  -webkit-flex: 2 1 320px;
       -ms-flex: 2 1 320px;
           flex: 2 1 320px;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 500px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
@@ -765,9 +741,8 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .services .service .home .location-wrap .btn, .services .service .work .location-wrap .btn {
   border-radius: 0;
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   height: 39px;
   max-width: 320px;
 }
@@ -793,7 +768,6 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .services .service .secure {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   max-width: 190px;
@@ -872,15 +846,12 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .products .section {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 100px 0;
   padding: 0;
 }
@@ -906,7 +877,6 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .products .section .desc {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 10 440px;
       -ms-flex: 1 10 440px;
           flex: 1 10 440px;
   font-size: 1rem;
@@ -920,15 +890,12 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .products .section-rev {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row-reverse wrap;
-      -ms-flex-flow: row-reverse wrap;
-          flex-flow: row-reverse wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-flow: row-reverse wrap;
+      flex-flow: row-reverse wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 100px 0;
   padding: 0;
 }
@@ -954,7 +921,6 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .products .section-rev .desc-rev {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 10 440px;
       -ms-flex: 1 10 440px;
           flex: 1 10 440px;
   font-size: 1rem;
@@ -987,19 +953,15 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .contact form {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }

@@ -9,6 +9,8 @@ var gulp        = require("gulp"),
 	prefix      = require("gulp-autoprefixer"),
 	image		= require("gulp-image"),
 	uglify 		= require('gulp-uglify'),
+	cleanCSS	= require('gulp-clean-css'),
+	config 		= require('./config.json'), // external config file
 	browserSync = require("browser-sync").create();
 
 
@@ -16,23 +18,9 @@ var gulp        = require("gulp"),
 // Settings
 // --------------------------------------------------------------------
 
-var code = {
-	sass: ['./Assets/css/1-tools/*.sass', './Assets/css/2-base/*.sass', './Assets/css/3-modules/*.sass', './Assets/css/4-pages/*.sass','./Assets/css/*.sass' , './Assets/css/1-tools/*.scss', './Assets/css/2-base/*.scss', './Assets/css/3-modules/*.scss', './Assets/css/4-pages/*.scss'],
-	jade: "./*.jade",
-	js: "./Assets/js/*.js",
-	img: "./Assets/img/*",
-	css: "./Assets/css",
-	root: "./"
-};
-
-var output = {
-	js: "_site/Assets/js",
-	css: "_site/Assets/css",
-	img: "_site/Assets/img",
-	root: "_site/",
-	//min_css: 'app.min.css',
-	//min_js: 'app.min.js'
-};
+var code 	= config.code;
+var output 	= config.output;
+var uri 	= config.config;
 
 
 // --------------------------------------------------------------------
@@ -64,7 +52,7 @@ gulp.task('image', function () {
 // Task: Compress / Ugligy
 // --------------------------------------------------------------------
 
-gulp.task('compress', function() {
+gulp.task('minify', function() {
 
   return gulp.src(code.js)
 	.pipe(plumber({
@@ -72,7 +60,6 @@ gulp.task('compress', function() {
 	}))
 	.pipe(uglify())
     .pipe(gulp.dest(output.js))
-	.pipe(browserSync.stream());
 });
 
 // --------------------------------------------------------------------
@@ -93,7 +80,21 @@ gulp.task('sass', function() {
 		.pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
 		.pipe(gulp.dest(output.css))
 		.pipe(browserSync.stream())
-		.pipe(gulp.dest(code.css));
+		.pipe(gulp.dest(code.cssOut));
+});
+
+
+// --------------------------------------------------------------------
+// Task: Compress CSS
+// --------------------------------------------------------------------
+
+gulp.task('compress-css', function() {
+	return gulp.src(code.cssIn)
+		.pipe(plumber({
+			errorHandler: onError
+		}))
+		.pipe(cleanCSS({compatibility: 'ie9'}))
+		.pipe(gulp.dest(output.css));
 });
 
 
@@ -108,7 +109,7 @@ gulp.task('jade', function() {
 			errorHandler: onError
 		}))
 		.pipe(jade({pretty: true}))
-		.pipe(gulp.dest(output.root))
+		.pipe(gulp.dest(uri.devUrl))
 		.pipe(browserSync.stream());
 });
 
@@ -117,10 +118,10 @@ gulp.task('jade', function() {
 // Task: Browser Sync Server
 // --------------------------------------------------------------------
 
-gulp.task('serve', ['sass', 'jade', 'image', 'compress'], function() {
+gulp.task('serve', ['sass', 'jade', 'image'], function() {
 	browserSync.init({
 		server: {
-			baseDir: output.root
+			baseDir: uri.devUrl
 		}
 	});
 });
@@ -134,9 +135,16 @@ gulp.task('watch', function() {
 	gulp.watch(code.jade, ['jade']);
 	gulp.watch(code.sass, ['sass']);
 	gulp.watch(code.img, ['image']);
-	gulp.watch(code.js, ['compress']);
-	gulp.watch(output.root).on('change', browserSync.reload);
+	gulp.watch(code.js).on('change', browserSync.reload);
+	gulp.watch(uri.devUrl).on('change', browserSync.reload);
 });
+
+
+// --------------------------------------------------------------------
+// Task: Build Project
+// --------------------------------------------------------------------
+
+gulp.task('build', ['minify', 'compress-css']);
 
 
 // --------------------------------------------------------------------
