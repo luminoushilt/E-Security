@@ -1,0 +1,36 @@
+.slick-slider
+	margin: 0 auto
+	max-width: 840px !important
+	width: $full-width !important
+
+.slick-slide
+	height: 545px !important
+
+.prev
+	margin-right: 10px
+	opacity: .1
+	+position(absolute, 45% null null 0px)
+
+	img
+		height: 55px !important
+		width: 50px !important
+
+	&:hover
+		opacity: 1
+
+.next
+	margin-left: 10px
+	opacity: .1
+	+position(absolute, 45% 0px null null)
+
+	img
+		height: 55px !important
+		width: 50px !important
+
+	&:hover
+		opacity: 1
+
+@media(max-width: 940px)
+
+	.slick-slide
+		height: auto !important

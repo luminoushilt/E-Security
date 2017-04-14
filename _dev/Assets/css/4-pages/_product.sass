@@ -1,0 +1,83 @@
+/* Product page styling */
+
+.products
+	margin: 1em 0
+	padding: 1em 0
+	position: relative
+
+	h3
+		text-align: center
+
+	.section
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-around
+		margin: 100px 0
+		padding: 0
+
+		&:last-child
+			border-bottom: none
+
+		.item
+			margin-right: 40px
+			+size(200px 170px)
+
+			img
+				background: #fff
+				border: none
+				border-radius: 0
+				margin: 10px 0
+				+size($fill)
+
+		.desc
+			flex: 1 10 440px
+			font-size: 1rem
+			padding: 1em
+
+			h6
+				margin-bottom: 5px
+				text-transform: uppercase
+
+	.section-rev
+		display: flex
+		flex-flow: row-reverse wrap
+		justify-content: space-around
+		margin: 100px 0
+		padding: 0
+
+		&:last-child
+			border-bottom: none
+
+		.item-rev
+			margin-left: 40px
+			+size(200px 170px)
+
+			img
+				background: #fff
+				border: none
+				border-radius: 0
+				margin: 10px 0
+				+size($fill)
+
+		.desc-rev
+			flex: 1 10 440px
+			font-size: 1rem
+			padding: 1em
+			text-align: right
+
+			h6
+				margin-bottom: 5px
+				text-transform: uppercase
+
+@media(max-width: 631px)
+	.products
+
+		.section
+
+			.item
+				border: none
+
+		.section-rev
+
+			.item-rev
+				border: none
