@@ -115,10 +115,24 @@ gulp.task('jade', function() {
 
 
 // --------------------------------------------------------------------
+// Task: JS Move
+// --------------------------------------------------------------------
+
+gulp.task('js-move', function() {
+
+	return gulp.src(code.js)
+		.pipe(plumber({
+			errorHandler: onError
+		}))
+		.pipe(gulp.dest(output.js))
+		.pipe(browserSync.stream());
+})
+
+// --------------------------------------------------------------------
 // Task: Browser Sync Server
 // --------------------------------------------------------------------
 
-gulp.task('serve', ['sass', 'jade', 'image'], function() {
+gulp.task('serve', ['sass', 'jade', 'image', 'js-move'], function() {
 	browserSync.init({
 		server: {
 			baseDir: uri.devUrl
@@ -135,7 +149,7 @@ gulp.task('watch', function() {
 	gulp.watch(code.jade, ['jade']);
 	gulp.watch(code.sass, ['sass']);
 	gulp.watch(code.img, ['image']);
-	gulp.watch(code.js).on('change', browserSync.reload);
+	gulp.watch(code.js, ['js-move']);
 	gulp.watch(uri.devUrl).on('change', browserSync.reload);
 });
 

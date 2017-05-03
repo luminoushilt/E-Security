@@ -15,7 +15,7 @@
 	"js"  : "_dev/Assets/js/*.js",
 	"img"   : "_dev/Assets/img/*",
 	"cssOut"   : "_dev/Assets/css",
-	"cssIn"   : "_dev/Assets/css/*.css"
+	"cssIn"   : "_dev/Assets/css/main.css"
   },
   "output" : {
 	  "js"  : "_site/Assets/js/",

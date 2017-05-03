@@ -4,13 +4,14 @@
 	background-color: #ddd
 	border-bottom: 1px solid darken(#ddd, 10%)
 	border-top: 1px solid darken(#ddd, 10%)
+	min-width: $min-width
 	width: 100vw
 	text-align: center
 
 .services
 	height: auto
 	margin: 0 auto
-	padding: 1em
+	padding: 1rem
 	position: relative
 	text-align: center
 	width: $full-width
@@ -22,8 +23,8 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-around
-		margin: 1em 0
-		padding: 1em 0
+		margin: 1rem 0
+		padding: 1rem
 
 		.location
 			display: flex
@@ -57,12 +58,12 @@
 
 			h6
 				line-height: 1.2
-				padding: 0 1em
+				padding: 0 1rem
 
 			p
 				font-size: 1.1rem
 				margin-top: -30px
-				padding: 0 1em
+				padding: 0 1rem
 
 		.work
 			@extend .home
@@ -78,13 +79,14 @@
 				width: $fill
 			p
 				margin-top: -25px
-				padding: 0 1em
+				padding: 0 1rem
 				text-align: center
 
-	.commercial
+	.commercial, .residential
 		font-size: 1.2rem
 		margin-bottom: 20px
-		text-align: justify
+		padding: 0 1rem
+		text-align: left
 
 		h3
 			text-align: center
@@ -99,21 +101,20 @@
 		h6
 			text-align: left
 
-	.residential
-		font-size: 1.2rem
-		padding-bottom: 10px
-		text-align: justify
+@media(max-width: 640px)
+	.services
+		display: flex
+		flex-direction: column
 
-		h3
-			padding-bottom: 10px
+		.residential, .commercial
+			font-size: 1rem
+			padding: 1rem
 			text-align: center
 
-		img
-			border: 1px solid $border-color
-			border-radius: 10px
-			float: left
-			margin-right: 10px
-			+size(387px 200px)
+			img
+				display: block
+				float: none
+				margin: 0 auto
 
-		h6
-			text-align: left
+			h6
+				text-align: center

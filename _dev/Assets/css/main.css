@@ -373,6 +373,7 @@ body, html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 320px;
   padding: 10px 0;
   width: 100vw;
 }
@@ -683,6 +684,7 @@ header nav .mobile-nav-toggle.is-open span:before {
   background-color: #ddd;
   border-bottom: 1px solid #c4c4c4;
   border-top: 1px solid #c4c4c4;
+  min-width: 320px;
   width: 100vw;
   text-align: center;
 }
@@ -690,7 +692,7 @@ header nav .mobile-nav-toggle.is-open span:before {
 .services {
   height: auto;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1rem;
   position: relative;
   text-align: center;
   width: 100%;
@@ -708,8 +710,8 @@ header nav .mobile-nav-toggle.is-open span:before {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 1em 0;
-  padding: 1em 0;
+  margin: 1rem 0;
+  padding: 1rem;
 }
 
 .services .service .location {
@@ -757,13 +759,13 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .services .service .home h6, .services .service .work h6 {
   line-height: 1.2;
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
 .services .service .home p, .services .service .work p {
   font-size: 1.1rem;
   margin-top: -30px;
-  padding: 0 1em;
+  padding: 0 1rem;
 }
 
 .services .service .secure {
@@ -782,21 +784,22 @@ header nav .mobile-nav-toggle.is-open span:before {
 
 .services .service .secure p {
   margin-top: -25px;
-  padding: 0 1em;
+  padding: 0 1rem;
   text-align: center;
 }
 
-.services .commercial {
+.services .commercial, .services .residential {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  text-align: justify;
+  padding: 0 1rem;
+  text-align: left;
 }
 
-.services .commercial h3 {
+.services .commercial h3, .services .residential h3 {
   text-align: center;
 }
 
-.services .commercial img {
+.services .commercial img, .services .residential img {
   border: 1px solid #ddd;
   border-radius: 10px;
   float: left;
@@ -805,32 +808,33 @@ header nav .mobile-nav-toggle.is-open span:before {
   width: 387px;
 }
 
-.services .commercial h6 {
+.services .commercial h6, .services .residential h6 {
   text-align: left;
 }
 
-.services .residential {
-  font-size: 1.2rem;
-  padding-bottom: 10px;
-  text-align: justify;
-}
-
-.services .residential h3 {
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.services .residential img {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  float: left;
-  margin-right: 10px;
-  height: 200px;
-  width: 387px;
-}
-
-.services .residential h6 {
-  text-align: left;
+@media (max-width: 640px) {
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services .residential, .services .commercial {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .services .residential img, .services .commercial img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  .services .residential h6, .services .commercial h6 {
+    text-align: center;
+  }
 }
 
 /* Product page styling */
@@ -997,6 +1001,7 @@ footer {
   border-top: 1px solid #ddd;
   color: #fff;
   font-size: 12px;
+  min-width: 320px;
   padding: 10px 0 2px;
   text-align: center;
   width: 100vw;
