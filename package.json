@@ -1,7 +1,7 @@
 {
-  "name": "Hilt-Dev-Kit",
-  "version": "1.0.1",
-  "description": "A starter project including setup for Jade, GulpJS, SASS & BroswerSync",
+  "name": "e-security",
+  "version": "1.0.0",
+  "description": "Automation setup for Jade, GulpJS, SASS & BroswerSync",
   "main": "gulpfile.js",
   "author": "Luminous Hilt (http://luminoushilt.com/)",
   "license": "MIT",
@@ -18,6 +18,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/luminoushilt/Hilt-Starter-Kit.git"
+    "url": "https://github.com/luminoushilt/E-Security.git"
   }
 }
